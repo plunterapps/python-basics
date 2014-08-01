@@ -2,9 +2,11 @@
 # -*- coding: iso-8859-15 -*-
 import os, sys
 
-#Este algoritmo foi criado para ver a lista de horarios de sua sala.
-#Esta é a versão 1.0 com alguns bugs, melhore o código!
-#v01 - Iago Augusto
+#Iago Augusto - Plunter Apps // www.plunter.com
+#This algorithm is free to edit and anyone can improve it
+#Why I use enumerate? Because this range can show the number of class, you know? like 0 - Math, 1 - Biology
+#My list is in Portuguese because my school are in Brazil.
+#Just change it!
 
 #LISTA
 segunda = ["Quimica", "Historia", "Portugues", "Espanhol", "Matematica"]
@@ -14,30 +16,26 @@ quinta = ["Matematica", "Geografia", "Geografia", "Biologia", "Portugues"]
 sexta = ["Ingles", "Matematica", "Fisica", "Ed. Fisica", "Ed. Fisica"]
 #FIM-LISTA
 
-print """
->> Horarios Padre Clemente v0.1
-"""
-lista = input("Digite o dia que você deseja ver: ")
+print "\n>> Horários Escolares v0.2 - Plunter Apps"
 
-print "\nEis o seu horário:"
-if lista == segunda:
-	for segunda in enumerate(segunda):
-		print segunda
-elif lista == terca:
-	for terca in enumerate(terca):
-		print terca
-elif lista == quarta:
-	for quarta in enumerate(quarta):
-		print quarta
-elif lista == quinta:
-	for quinta in enumerate(quinta):
-		print quinta	
-elif lista == sexta:
-	for sexta in enumerate(sexta):
-		print sexta
+done = False
+while not done:
 
-print "\nObrigado por consultar utilizando nosso programa!"
-while lista:
-  caracter = raw_input("Deseja sair s/n: ")
-  if caracter == 's':
-	  quit()
+	lista = input("\nDigite o dia que você deseja ver: ")
+
+	print "\nEis o seu horário:"
+	if lista == segunda:
+		for segunda in enumerate(segunda):
+			print segunda
+	elif lista == terca:
+		for terca in enumerate(terca):
+			print terca
+	elif lista == quarta:
+		for quarta in enumerate(quarta):
+			print quarta
+	elif lista == quinta:
+		for quinta in enumerate(quinta):
+			print quinta	
+	elif lista == sexta:
+		for sexta in enumerate(sexta):
+			print sexta
