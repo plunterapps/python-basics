@@ -3,10 +3,12 @@
 import os, sys
 
 #Iago Augusto - Plunter Apps // www.plunter.com
-#This algorithm is free to edit and anyone can improve it
-#Why I use enumerate? Because this range can show the number of class, you know? like 0 - Math, 1 - Biology
-#My list is in Portuguese because my school are in Brazil.
-#Just change it!
+#Terminal list - horarios.py improved!
+#Este é um algoritmo de listas que precisa ser melhorado!
+#Bom, existem várias maneiras de uso. No meu caso utilizei para ver meus horarios escolares.
+#Mas existem certas versões e implementações de loops que podem ser úteis!
+#Por que horarios de escola? Pq eu fico até tarde usando meu terminal linux(programando e brincando)
+#E quando eu vou dormir, ou preciso estudar e acabo esquecendo as aulas de amanhã, acabo dando uma olhada por um simples comando.
 
 #LISTA
 segunda = ["Quimica", "Historia", "Portugues", "Espanhol", "Matematica"]
@@ -16,7 +18,8 @@ quinta = ["Matematica", "Geografia", "Geografia", "Biologia", "Portugues"]
 sexta = ["Ingles", "Matematica", "Fisica", "Ed. Fisica", "Ed. Fisica"]
 #FIM-LISTA
 
-print "\n>> Horários Escolares v0.2 - Plunter Apps"
+print """\n>> Terminal Lists v0.3 - Plunter Apps
+"""
 
 done = False
 while not done:
@@ -25,17 +28,12 @@ while not done:
 
 	print "\nEis o seu horário:"
 	if lista == segunda:
-		for segunda in enumerate(segunda):
 			print segunda
 	elif lista == terca:
-		for terca in enumerate(terca):
-			print terca
+		print terca
 	elif lista == quarta:
-		for quarta in enumerate(quarta):
-			print quarta
+		print quarta
 	elif lista == quinta:
-		for quinta in enumerate(quinta):
-			print quinta	
+		print quinta
 	elif lista == sexta:
-		for sexta in enumerate(sexta):
-			print sexta
+		print sexta
