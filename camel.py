@@ -1,4 +1,6 @@
 import random
+#Camel BASIC Game in python from 'Program Arcade Games with Python' Chapter 4: Lab exercise!
+#Written by Iago Augusto - plunter.com
 
 print """
 Welcome to camel!
