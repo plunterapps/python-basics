@@ -14,9 +14,9 @@ thirst = 0
 camel_tied = 0
 natives_travel = -20
 canteen = 5
-natives_up = random.randrange(0,10)
-full_speed = random.randrange(10,20)
-moderate_speed = random.randrange(5,12)
+natives_up = random.randrange(0, 10)
+full_speed = random.randrange(10, 20)
+moderate_speed = random.randrange(5, 12)
 #####
 
 done = False
@@ -52,9 +52,9 @@ while not done:
 	#AHEAD MODERATE SPEED
 	elif choice.upper() == "B":
 		print "You walked %s miles" % moderate_speed
-		miles_traveled = miles_traveled + moderate_speed
-		natives_travel = natives_travel + natives_up
-		thirst = thirst + 1
+		miles_traveled += full_speed
+		natives_travel += natives_up
+		thirst += 1
 		camel_tied = camel_tied + random.randrange(1,3)
 
 	#DRINK FROM YOUR CANTEEN
@@ -87,10 +87,13 @@ while not done:
 		done = True
 
 	#NATIVES WALKING
-	else:
+	elif:
 		natives_travel >= -10
 		print "Natives are getting close."
-
-if miles_traveled == 200:
-	print "You won, you got the camel and across the Mobi Desert."
-	done = True
+		
+	if miles_traveled == 200:
+		print "You won, you got the camel and across the Mobi Desert."
+		done = True
+		
+	else:
+		print "Something is wrong!"
